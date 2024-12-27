@@ -13,12 +13,20 @@
             color: #333;
             line-height: 1.6;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        .header {
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center;    /* Centers content vertically */
+            background-color: #4caf50; /* Green background */
+            color: white;           /* White text */
+            padding: 10px 0;        /* Add padding to the top and bottom */
         }
+
+        .header .contact {
+            margin: 0 10px; /* Adds space between items */
+            font-size: 18px; /* Adjust the font size */
+        }
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -46,10 +54,14 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Rishi Rajesh Jeswani</h1>
-        <p>+1 (984) 480-7289 | <a href="mailto:rjeswan2@ncsu.edu">rjeswan2@ncsu.edu</a> | <a href="https://linkedin.com/in/rishijeswani">LinkedIn</a></p>
+    <header class="header">
+    <span class="contact">+1 (984) 480-7289</span>
+    <span class="contact">|</span>
+    <span class="contact"><a href="mailto:rjeswan2@ncsu.edu">rjeswan2@ncsu.edu</a></span>
+    <span class="contact">|</span>
+    <span class="contact"><a href="https://linkedin.com/in/rishijeswani">LinkedIn</a></span>
     </header>
+
 
     <div class="container">
         <section>
